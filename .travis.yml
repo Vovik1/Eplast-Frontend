@@ -1,0 +1,18 @@
+language: node_js
+node_js: lts/*
+
+cache: npm
+
+install:
+  - npm install
+
+script:
+  - npm run build
+
+notifications:
+  email: false
+
+deploy:
+  provider: firebase
+  token:
+    secure: '1//0c_R8GxAyECXxCgYIARAAGAwSNwF-L9Irk-SHHcID9li-lCsru1pBJJ6_C-QYFnhLQV8FDrNtJJ2buTCqTrEeP0j8PJ7nZHwYvo4'
