@@ -1,0 +1,18 @@
+language: node_js
+node_js: lts/*
+
+cache: npm
+
+install:
+  - npm install
+
+script:
+  - npm run build
+
+notifications:
+  email: false
+
+deploy:
+  provider: firebase
+  token: '1//0ci3NafLCyrIsCgYIARAAGAwSNwF-L9IruKyVQq8LSt-8jWstCi7uWhXiAoEKzgOhPcGVOjMPH3q5lh4Ny9SMgArPziVRiVSnLgs'
+  project: 'eplast-26168'
