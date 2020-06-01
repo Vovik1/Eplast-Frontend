@@ -14,8 +14,16 @@
     border: none !important;
 }
 .headerItem:hover{
-    color: wheat !important;
     border: none !important;
+}
+.headerLink{
+    color: white !important;
+}
+.headerLink:hover{
+    color: wheat !important;
+}
+.activeLink{
+    color: wheat !important;
 }
 .headerIcon{
     margin-left: 5px;
