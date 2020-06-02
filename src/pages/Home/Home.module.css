@@ -69,6 +69,7 @@
     .sliderOverlay {
         display: none;
     }
+
     .card__body {
         flex-direction: column;
     }
@@ -92,13 +93,14 @@
 }
 
 @media (max-width: 767px) {
-    .sliderOverlay{
+    .sliderOverlay {
         width: 40%;
         font-size: 13px;
     }
 }
+
 @media (max-width: 1023px) {
-    .sliderOverlay{
+    .sliderOverlay {
         width: 30%;
         font-size: 14px;
     }

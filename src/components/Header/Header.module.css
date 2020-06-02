@@ -4,48 +4,59 @@
     justify-content: space-between;
     padding: 0 80px;
 }
+
 .headerMenu {
     background-color: #3c5438;
     color: white;
     border: none;
     font-size: 16px;
 }
-.headerMenu:nth-child(2){
+
+.headerMenu:nth-child(2) {
     min-width: 225px;
 }
-.headerItem{
+
+.headerItem {
     border: none !important;
 }
-.headerItem:hover{
+
+.headerItem:hover {
     border: none !important;
 }
-.headerLink{
+
+.headerLink {
     color: white !important;
 }
-.headerLink:hover{
+
+.headerLink:hover {
     color: wheat !important;
 }
-.activeLink{
+
+.activeLink {
     color: wheat !important;
 }
-.headerIcon{
+
+.headerIcon {
     margin-left: 5px;
     font-size: 16px !important;
 }
+
 .headerLogo img:first-child {
     width: 45px;
     margin-top: -5px;
 }
-.headerLogo img:nth-child(2){
+
+.headerLogo img:nth-child(2) {
     width: 60px;
     margin-left: 15px;
 }
 
 @media (max-width: 767px) {
-    .headerContainer{
+    .headerContainer {
         padding: 0 15px;
     }
-    .headerMenu:nth-child(2){
+
+    .headerMenu:nth-child(2) {
         min-width: 0;
         max-width: 100px;
     }

@@ -52,7 +52,8 @@
     .contacts {
         justify-content: space-around;
     }
-    .contactsList{
+
+    .contactsList {
         width: 30%;
     }
 }
