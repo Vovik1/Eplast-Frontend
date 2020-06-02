@@ -7,21 +7,33 @@ import { store, persistor } from './store';
 import SignUp from './pages/SignUp/SignUp';
 import SignIn from './pages/SignIn/SignIn';
 import "antd/dist/antd.css";
+import HeaderContainer from './components/Header/HeaderContainer';
+import Home from './pages/Home/Home';
+import DecisionTable from './pages/DecisionTable/DecisionTable';
+import FooterContainer from './components/Footer/FooterContainer';
+import Contacts from './pages/Contacts/Contacts';
 
 function App() {
   return (
-    <div className="App">
-      <Provider store={store}>
-        <PersistGate loading={null} persistor={persistor}>
-          <Router>
-            <Switch>
-              <Route path="/signup" component={SignUp} />
-              <Route path="/signin" component={SignIn} />
-            </Switch>
-          </Router>
-        </PersistGate>
-      </Provider>
-    </div>
+      <div className="App">
+        <Provider store={store}>
+          <PersistGate loading={null} persistor={persistor}>
+            <Router>
+              <HeaderContainer/>
+              <div className="mainContent">
+                <Switch>
+                  <Route exact path="/" component={Home}/>
+                  <Route path="/signup" component={SignUp}/>
+                  <Route path="/signin" component={SignIn}/>
+                  <Route path="/decisions" component={DecisionTable}/>
+                  <Route path="/contacts" component={Contacts}/>
+                </Switch>
+              </div>
+              <FooterContainer/>
+            </Router>
+          </PersistGate>
+        </Provider>
+      </div>
   );
 }
 
