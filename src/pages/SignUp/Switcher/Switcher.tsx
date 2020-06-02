@@ -20,7 +20,7 @@ export default function (props: { page: string }) {
       <div className={styles.loginRectangle}>
         {page === 'SignUp' ? (
           <div className={styles.SwitcherText}>
-            <p className={styles.loginText} onClick={changePage}>
+            <p className={styles.loginText} onClick={changePage} onKeyDown={() => false} role="presentation">
               Увійти
             </p>
             <p id={styles.activeRegisterText} className={styles.registerText}>
@@ -33,7 +33,7 @@ export default function (props: { page: string }) {
             <p id={styles.activeLoginText} className={styles.loginText}>
               Увійти
             </p>
-            <p className={styles.registerText} onClick={changePage}>
+            <p className={styles.registerText} onClick={changePage} onKeyDown={() => false} role="presentation">
               Зареєструватись
             </p>
             <div id={styles.loginActive} className={styles.activeRectangle} />

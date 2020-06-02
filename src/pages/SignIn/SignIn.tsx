@@ -1,6 +1,6 @@
 import React from 'react';
-import Switcher from '../SignUp/Switcher/Switcher';
 import { Form, Input, Button, Checkbox } from 'antd';
+import Switcher from '../SignUp/Switcher/Switcher';
 // @ts-ignore
 import styles from './SignIn.module.css';
 // @ts-ignore
@@ -51,7 +51,7 @@ export default function () {
           <Input.Password visibilityToggle={false} className={styles.SignInInput} placeholder="Пароль" />
         </Form.Item>
         <Form.Item name="remember" valuePropName="checked">
-          <Checkbox className={styles.rememberMe}>Запам'ятати мене</Checkbox>
+          <Checkbox className={styles.rememberMe}>Запам`ятати мене</Checkbox>
         </Form.Item>
         <Form.Item>
           <Button htmlType="submit" id={styles.confirmButton}>Увійти</Button>
@@ -60,13 +60,13 @@ export default function () {
         <div className={styles.GoogleFacebookLogin}>
           <Button id={styles.googleBtn} className={styles.socialButton}>
             <span id={styles.imgSpanGoogle}>
-              <img className={styles.socialImg} src={googleImg} />
+              <img alt="Google icon" className={styles.socialImg} src={googleImg} />
             </span>
             <span className={styles.btnText}>Google</span>
           </Button>
           <Button id={styles.facebookBtn} className={styles.socialButton}>
             <span id={styles.imgSpanFacebook}>
-              <img className={styles.socialImg} src={facebookImg} />
+              <img alt="Facebook icon" className={styles.socialImg} src={facebookImg} />
             </span>
             <span className={styles.btnText}>Facebook</span>
           </Button>
