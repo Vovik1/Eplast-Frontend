@@ -1,5 +1,4 @@
 @import '~antd/dist/antd.css';
-
 .App {
     display: flex;
     min-height: 100vh;
@@ -16,28 +15,23 @@
     .ant-menu-submenu-title:hover {
         color: wheat !important;
     }
-
     .ant-menu-submenu-selected {
         color: wheat;
         border-bottom: none !important;
         background-color: inherit !important;
     }
-
-    .ant-menu-horizontal > .ant-menu-submenu {
+    .ant-menu-horizontal>.ant-menu-submenu {
         top: 0 !important;
         border-bottom: none !important;
         color: white;
     }
-
-    .ant-menu-horizontal > .ant-menu-submenu-active {
+    .ant-menu-horizontal>.ant-menu-submenu-active {
         border-bottom: none !important;
     }
-
     .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
         background-color: inherit;
     }
-
-    .ant-menu-submenu-popup > .ant-menu {
+    .ant-menu-submenu-popup>.ant-menu {
         background-color: #3c5438;
         color: white;
     }
