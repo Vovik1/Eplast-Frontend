@@ -26,7 +26,7 @@ const HeaderContainer = () => {
           </NavLink>
         </Menu.Item>
         <Menu.Item className={classes.headerItem} key="3">
-          <NavLink to="/decisions" className={classes.headerLink} activeClassName={classes.activeLink}>
+          <NavLink to="/signin" className={classes.headerLink} activeClassName={classes.activeLink}>
             Увійти
             <LoginOutlined className={classes.headerIcon} />
           </NavLink>

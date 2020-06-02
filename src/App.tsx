@@ -5,6 +5,7 @@ import HeaderContainer from './components/Header/HeaderContainer';
 import Home from './pages/Home/Home';
 import DecisionTable from './pages/DecisionTable/DecisionTable';
 import FooterContainer from './components/Footer/FooterContainer';
+import Contacts from './pages/Contacts/Contacts';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/decisions" component={DecisionTable} />
+            <Route path="/contacts" component={Contacts} />
           </Switch>
         </div>
         <FooterContainer />
