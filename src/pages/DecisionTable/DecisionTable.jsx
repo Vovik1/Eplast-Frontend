@@ -8,8 +8,8 @@ import http from '../../api/http';
 const DecisionTable = () => {
   const [loading, setLoading] = useState(false);
   const [data, setData] = useState([]);
-  const [searchText, setSearchText] = useState('');
-  const [searchedColumn, setSearchedColumn] = useState('');
+  const [, setSearchText] = useState('');
+  const [, setSearchedColumn] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
