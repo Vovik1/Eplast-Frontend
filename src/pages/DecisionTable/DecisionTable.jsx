@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Table, Input, Button, Space } from 'antd';
+import { Table, Input, Button, Space, Layout } from 'antd';
 import { SearchOutlined } from '@ant-design/icons';
-// import Highlighter from 'react-highlight-words';
+import Highlighter from 'react-highlight-words';
 // import columns from './columns';
 import http from '../../api/http';
+// import classes from './Table.module.css';
+
+const { Content } = Layout;
 
 const DecisionTable = () => {
   const [loading, setLoading] = useState(false);
@@ -30,6 +33,16 @@ const DecisionTable = () => {
   const handleReset = (clearFilters) => {
     clearFilters();
     setSearchText('');
+  };
+
+  const itemRender = (current, type, originalElement) => {
+    if (type === 'prev') {
+      return <Button style={{ backgroundColor: '#3c5438', color: 'white' }}>Попередня</Button>;
+    }
+    if (type === 'next') {
+      return <Button style={{ backgroundColor: '#3c5438', color: 'white' }}>Наступна</Button>;
+    }
+    return originalElement;
   };
 
   const getColumnSearchProps = (dataIndex) => ({
@@ -64,6 +77,17 @@ const DecisionTable = () => {
     ),
     filterIcon: (filtered) => <SearchOutlined style={{ color: filtered ? '#1890ff' : undefined }} />,
     onFilter: (value, record) => record[dataIndex].toString().toLowerCase().includes(value.toLowerCase()),
+    render: (text) =>
+      searchedColumn === dataIndex ? (
+        <Highlighter
+          highlightStyle={{ backgroundColor: '#ffc069', padding: 0 }}
+          searchWords={[searchText]}
+          autoEscape
+          textToHighlight={text.toString()}
+        />
+      ) : (
+        text
+      ),
   });
 
   const columns = [
@@ -112,12 +136,30 @@ const DecisionTable = () => {
 
   return (
     <>
-      {loading && <h1>Loading...</h1>}
+      {loading && (
+        <Layout>
+          <Content style={{ padding: '0 75px' }}>
+            <h1 style={{ textAlign: 'center', marginTop: '20px' }}>Рішення керівних органів</h1>
+            <Table loading columns={columns} />
+          </Content>
+        </Layout>
+      )}
       {!loading && (
-        <>
-          <h1 style={{ textAlign: 'center' }}>Рішення керівних органів</h1>
-          <Table dataSource={data} columns={columns} rowKey="id" />
-        </>
+        <Layout>
+          <Content style={{ padding: '0 75px' }}>
+            <h1 style={{ textAlign: 'center', marginTop: '20px' }}>Рішення керівних органів</h1>
+            <Table
+              dataSource={data}
+              columns={columns}
+              rowKey="id"
+              pagination={{
+                itemRender,
+                position: ['bottomCenter'],
+                showTotal: (total, range) => `Записи з ${range[0]} по ${range[1]} із ${total} записів`,
+              }}
+            />
+          </Content>
+        </Layout>
       )}
     </>
   );
