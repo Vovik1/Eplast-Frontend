@@ -1,6 +1,5 @@
 import React from 'react';
 import { Form, Input, Button } from 'antd';
-// @ts-ignore
 import styles from './SignUp.module.css';
 import Switcher from './Switcher/Switcher';
 import { checkEmail, checkNameSurName } from './verification';
