@@ -14,6 +14,10 @@ import FooterContainer from './components/Footer/FooterContainer';
 import Contacts from './pages/Contacts/Contacts';
 import Actions from './pages/Actions/Actions';
 import ActionEvent from './pages/Actions/ActionEvent/ActionEvent';
+import EventInfo from './pages/Actions/ActionEvent/EventInfo/EventInfo';
+import UserProfile from "./pages/personalData/PersonalData";
+import EventCreate from './pages/Actions/ActionEvent/EventCreate/EventCreate';
+
 
 function App() {
   return (
@@ -31,6 +35,9 @@ function App() {
                   <Route path="/contacts" component={Contacts}/>
                   <Route exact path="/actions" component={Actions} />
                   <Route exact path="/actions/events/:id" component={ActionEvent} />  
+                  <Route exact path="/actions/eventinfo/:id" component={EventInfo} />  
+                  <Route exact path="/actions/eventCreate" component={EventCreate} />  
+                  <Route path="/userpage/:specify" component={UserProfile}/>
                 </Switch>
               </div>
               <FooterContainer/>

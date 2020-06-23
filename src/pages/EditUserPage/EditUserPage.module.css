@@ -1,0 +1,19 @@
+.avatarWrapper{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.changeAvatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.changeAvatarBtn, .changeAvatarBtn:hover, .changeAvatarBtn:active, .changeAvatarBtn:focus{
+    background-color: #3c5438;
+    color: white;
+    border-radius: 4px;
+}
