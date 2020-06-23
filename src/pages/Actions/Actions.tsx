@@ -23,7 +23,7 @@ const Actions = () => {
             return cutArr.map((item: any) => (
                 <ActionCard item={item} key={item.id} />
             ));
-        }return null;
+        } return null;
     };
 
     const plastActions = renderActions(actions);
@@ -33,7 +33,6 @@ const Actions = () => {
             <h1 className={classes.mainTitle}>Акції</h1>
             <div className={classes.actionsWrapper}>{plastActions}</div>
         </div>
-
     )
 }
 export default Actions;
