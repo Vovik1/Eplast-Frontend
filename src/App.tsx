@@ -7,13 +7,15 @@ import { store, persistor } from './store';
 import SignUp from './pages/SignUp/SignUp';
 import SignIn from './pages/SignIn/SignIn';
 import "antd/dist/antd.css";
+
 import HeaderContainer from './components/Header/HeaderContainer';
 import Home from './pages/Home/Home';
-import DecisionTable from './pages/DecisionTable/DecisionTable';
 import FooterContainer from './components/Footer/FooterContainer';
 import Contacts from './pages/Contacts/Contacts';
 import UserProfile from "./pages/userPage/personalData/PersonalData";
 import Notifications from "./pages/Notifications/Notifications";
+import Actions from './pages/Actions/Actions';
+import ActionEvent from './pages/Actions/ActionEvent/ActionEvent';
 
 function App() {
   return (
@@ -27,7 +29,6 @@ function App() {
                   <Route exact path="/" component={Home}/>
                   <Route path="/signup" component={SignUp}/>
                   <Route path="/signin" component={SignIn}/>
-                  <Route path="/decisions" component={DecisionTable}/>
                   <Route path="/contacts" component={Contacts}/>
                   <Route path="/userpage/:specify" component={UserProfile}/>
                   <Route path="/notification" component={Notifications}/>
@@ -38,7 +39,7 @@ function App() {
           </PersistGate>
         </Provider>
       </div>
-  );
+  )
 }
 
 export default App;

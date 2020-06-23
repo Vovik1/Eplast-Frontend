@@ -1,8 +1,8 @@
 import React from 'react';
 import { Form, Input, Button, Checkbox } from 'antd';
 import Switcher from '../SignUp/Switcher/Switcher';
-import styles from './SignIn.module.css';
 import googleImg from '../../assets/images/google.png';
+import styles from './SignIn.module.css';
 import facebookImg from '../../assets/images/facebook.png';
 import { checkEmail } from '../SignUp/verification';
 
