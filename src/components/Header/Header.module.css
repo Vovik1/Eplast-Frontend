@@ -1,11 +1,11 @@
 .headerContainer {
-  background-color: #3c5438;
+  /* background-color: #3c5438; */
   display: flex;
   justify-content: space-between;
   padding: 0 80px;
 }
 .headerMenu {
-  background-color: #3c5438;
+  /* background-color: #3c5438; */
   color: white;
   border: none;
   font-size: 16px;
@@ -41,7 +41,7 @@
   font-size: 16px !important;
 }
 
-.headerIcon:hover{
+.headerIcon:hover {
   color: wheat;
 }
 
@@ -55,20 +55,20 @@
   margin-left: 15px;
 }
 
-.userMenu{
+.userMenu {
   border: none;
   background: inherit;
   color: white;
   font-size: 14px;
 }
-.userMenu:hover{
+.userMenu:hover {
   color: wheat;
 }
 
-.dropDownMenu{
+.dropDownMenu {
   margin-top: 20px;
 }
-.dropDownIcon{
+.dropDownIcon {
   margin-right: 5px;
   font-size: 16px;
 }
