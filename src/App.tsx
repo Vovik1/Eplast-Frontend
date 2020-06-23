@@ -12,10 +12,13 @@ import HeaderContainer from './components/Header/HeaderContainer';
 import Home from './pages/Home/Home';
 import FooterContainer from './components/Footer/FooterContainer';
 import Contacts from './pages/Contacts/Contacts';
-import UserProfile from "./pages/userPage/personalData/PersonalData";
+import EventInfo from './pages/Actions/ActionEvent/EventInfo/EventInfo';
+import UserProfile from "./pages/personalData/PersonalData";
+import EventCreate from './pages/Actions/ActionEvent/EventCreate/EventCreate';
 import Notifications from "./pages/Notifications/Notifications";
 import Actions from './pages/Actions/Actions';
 import ActionEvent from './pages/Actions/ActionEvent/ActionEvent';
+
 
 function App() {
   return (
@@ -30,6 +33,10 @@ function App() {
                   <Route path="/signup" component={SignUp}/>
                   <Route path="/signin" component={SignIn}/>
                   <Route path="/contacts" component={Contacts}/>
+                  <Route exact path="/actions" component={Actions} />
+                  <Route exact path="/actions/events/:id" component={ActionEvent} />  
+                  <Route exact path="/actions/eventinfo/:id" component={EventInfo} />  
+                  <Route exact path="/actions/eventCreate" component={EventCreate} />  
                   <Route path="/userpage/:specify" component={UserProfile}/>
                   <Route path="/notification" component={Notifications}/>
                 </Switch>

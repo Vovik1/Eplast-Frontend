@@ -1,5 +1,5 @@
 import React from 'react';
-// import { useHistory } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import 'antd/dist/antd.css';
 import { Card} from 'antd';
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
@@ -19,16 +19,17 @@ interface Props {
 }
 
 const EventCard = ({
-    item: { name},
+    item: { name, id},
 }: Props) => {
     const { Meta } = Card;
-    // const history = useHistory();
+    const history = useHistory();
 
     return (
         <div className={classes.background}>
             <div className={classes.actionsWrapper}>
                 <Card
                 className={classes.cardStyles}
+                onClick={()=> history.push(`/actions/eventinfo/${id}`)}
                     cover={
                         <img
                             alt="example"

@@ -4,7 +4,7 @@ import styles from './PersonalData.module.css';
 import AvatarAndProgress from './AvatarAndProgress';
 import UserFields from './UserFields';
 import EditUserPage from '../EditUserPage/EditUserPage';
-import EditEvent from '../../personalData/EditEvent/EditEvent';
+import EditEvent from './EditEvent/EditEvent';
 
 export default function ({
   match: {
@@ -19,15 +19,13 @@ export default function ({
           <AvatarAndProgress />
           <UserFields />
         </div>
-      ) : specify === 'editEvent' ?(
-        <div className={styles.content}>
-          <EditEvent />
-        </div>
+      ) : specify === 'editEvent' ? (
+        <EditEvent />
       ) : (
-            <div className={styles.content}>
-              <EditUserPage />
-            </div>
-          )}
+          <div className={styles.content}>
+            <EditUserPage />
+          </div>
+        )}
     </div>
   );
 }
