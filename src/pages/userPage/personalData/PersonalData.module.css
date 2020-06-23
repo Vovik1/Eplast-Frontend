@@ -1,0 +1,98 @@
+.mainContainer{
+    border-radius: 10px;
+    box-shadow: 0 0 9px 1px rgba(0,0,0,.25);
+    width: 75%;
+    display: flex;
+    align-self: center;
+    margin-top: 25px;
+    flex-direction: column;
+    padding: 0 130px;
+    background-color: rgb(240, 245, 240);
+    margin-bottom: 45px;
+}
+
+.content{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+}
+
+.leftPartWrapper{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+.statusText{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.progressBar{
+    display: flex;
+    width: max-content;
+    align-self: center;
+}
+
+.title{
+    width: max-content;
+    display: flex;
+    align-self: center;
+}
+
+.userFieldsWrapper{
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tableWrapper{
+    width: max-content;
+}
+
+.table {
+    width: 100%;
+    border-collapse:collapse;
+    font-size: 15px;
+    margin-bottom: 37px;
+}
+
+tr:not(:first-child):nth-of-type(odd) td{
+   padding-top: 35px;
+}
+
+tr td{
+    padding-left: 120px;
+    padding-right: 70px;
+    padding-bottom: 5px;
+    font-family: Verdana;
+}
+
+tr:nth-of-type(odd) td{
+    font-weight: 600;
+}
+
+tr:nth-of-type(even) span{
+    padding: 7px 13px;
+    border-radius: 6px;
+    background-color: rgba(210, 210, 210, 0.5);
+    display: block;
+    width: 200px;
+    text-align: center;
+}
+
+.btn{
+    outline: none !important;
+    border: 0 !important;
+    border-radius: 4px;
+    background-color: #3c5438 !important;
+    color: #dfe7f1 !important;
+    margin-bottom: 30px;
+    margin-left: 120px;
+}
+
+.btn:hover{
+transform: scale(1.05);
+}
