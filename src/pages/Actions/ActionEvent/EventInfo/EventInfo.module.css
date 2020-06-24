@@ -30,11 +30,11 @@
 }
 tr{
     font-size: 15px;
-    font-weight: 300 !important;
+    font-weight: 300;
 }
 td{
     width: 450px;
-    font-weight: 300 !important;
+    font-weight: 300;
 }
 table{
     margin-bottom: 30px;

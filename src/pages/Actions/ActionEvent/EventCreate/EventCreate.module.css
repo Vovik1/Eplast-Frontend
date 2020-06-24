@@ -46,7 +46,7 @@ form {
     margin: 16px 45px;
 }
 
-.select:hover, 
+.select:hover,
 .select:focus,
 input:hover,
 .select1:hover {
@@ -59,7 +59,7 @@ input:hover,
 }
 
 td,tr {
-    padding: 14px!important;
+    padding: 14px;
 }
 
 .select {

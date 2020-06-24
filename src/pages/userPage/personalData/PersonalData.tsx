@@ -19,15 +19,15 @@ export default function ({
           <AvatarAndProgress />
           <UserFields />
         </div>
-      ) : specify === 'editEvent' ? (
+      ) : specify === 'editEvent' ?(
         <div className={styles.content}>
           <EditEvent />
         </div>
       ) : (
-        <div className={styles.content}>
-          <EditUserPage />
-        </div>
-      )}
+            <div className={styles.content}>
+              <EditUserPage />
+            </div>
+          )}
     </div>
   );
 }

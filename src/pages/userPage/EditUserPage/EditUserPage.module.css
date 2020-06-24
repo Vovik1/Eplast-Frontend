@@ -41,7 +41,7 @@
 
 .formItem{
     display: block;
-    width: 300px;
+    width: 260px;
 }
 
 .dataInput{
@@ -72,4 +72,10 @@
 
 .confirmBtn:hover{
     transform: scale(1.07);
+}
+
+
+input,
+[role="spinbutton"] {
+    text-align: start;
 }
