@@ -29,10 +29,6 @@ const App: FC = () => (
             <Route path="/contacts" component={Contacts}/>
             <Route path="/signup" component={SignUp}/>
             <Route path="/signin" component={SignIn}/>
-
-            <Route exact path="/actions/eventinfo/:id" component={EventInfo} />
-            <Route exact path="/actions/events/:id" component={ActionEvent} />
-            <Route exact path="/actions/eventCreate" component={EventCreate} />
             <Route path="/notification" component={Notifications} />
 
             <RouteWithLayout
@@ -47,7 +43,10 @@ const App: FC = () => (
             />
             <RouteWithLayout layout={PrivateLayout} exact path="/cities" component={Cities}/>
             <RouteWithLayout layout={PrivateLayout} path="/cities/:id" component={City}/>
-            <RouteWithLayout layout={PrivateLayout} path="/actions" component={Actions}/>
+            <RouteWithLayout layout={PrivateLayout} exact path="/actions" component={Actions}/>
+            <RouteWithLayout layout={PrivateLayout} exact path="/actions/events/:id" component={ActionEvent} />
+            <RouteWithLayout layout={PrivateLayout} exact path="/actions/eventinfo/:id" component={EventInfo} />
+            <RouteWithLayout layout={PrivateLayout} exact path="/actions/eventCreate" component={EventCreate} />
 
           </Switch>
         </div>
