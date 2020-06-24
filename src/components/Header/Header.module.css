@@ -1,11 +1,9 @@
 .headerContainer {
-  /* background-color: #3c5438; */
   display: flex;
   justify-content: space-between;
   padding: 0 80px;
 }
 .headerMenu {
-  /* background-color: #3c5438; */
   color: white;
   border: none;
   font-size: 16px;
@@ -14,14 +12,16 @@
 .headerMenu:nth-child(2) {
   min-width: 225px;
 }
-
-.headerItem {
+.headerDropDownItem{
+  margin: 5px 0;
+}
+.headerItem, .headerDropDownItem {
   border: none !important;
 }
 
-.headerItem:hover {
+.headerItem:hover, .headerDropDownItem:hover {
   border: none !important;
-  color: wheat;
+  color: wheat !important;
 }
 
 .headerLink {

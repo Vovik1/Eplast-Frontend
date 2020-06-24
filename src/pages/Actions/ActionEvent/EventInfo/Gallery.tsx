@@ -1,5 +1,4 @@
 import React from 'react';
-// import 'antd/dist/antd.css';
 import { Carousel } from 'antd';
 import EventPict1 from "../../../../assets/images/EventGallary(1).jpg"
 import EventPict2 from "../../../../assets/images/EventGallary(2).jpg"

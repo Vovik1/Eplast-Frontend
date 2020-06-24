@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Modal, Button } from 'antd';
 import FormAddDecision from './FormAddDecision';
 import classes from './Table.module.css';

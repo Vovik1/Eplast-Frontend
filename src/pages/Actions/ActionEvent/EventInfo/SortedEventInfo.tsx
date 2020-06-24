@@ -1,5 +1,4 @@
 import React from 'react';
-// import 'antd/dist/antd.css';
 import { Row, Col, Table, Tooltip } from 'antd';
 import { UserDeleteOutlined, TeamOutlined, UserSwitchOutlined, CameraOutlined, IdcardOutlined } from '@ant-design/icons';
 

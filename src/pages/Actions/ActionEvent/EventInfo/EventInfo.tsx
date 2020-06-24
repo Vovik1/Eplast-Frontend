@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import "antd/dist/antd.css";
 import { Table, Input, Col, Row } from "antd";
 import SortedEventInfo from './SortedEventInfo';
 import rawData from "./data";
