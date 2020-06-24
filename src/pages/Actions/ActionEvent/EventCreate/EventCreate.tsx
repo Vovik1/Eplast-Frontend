@@ -1,5 +1,5 @@
 import React from 'react';
-import { Select, Input, DatePicker, InputNumber } from 'antd';
+import { Select, Input, DatePicker, InputNumber, Button } from 'antd';
 import moment from 'moment';
 
 const classes = require('./EventCreate.module.css');
@@ -27,9 +27,9 @@ const EventCreate = () => {
                     <h1>Нова подія</h1>
                     <form method="post">
                         <div className={classes.row}>
-                            <label htmlFor="radio1" className={classes.label}><input type="radio" name="radio" value="1" id="radio1"/>Акція</label>
-                            <label htmlFor="radio2" className={classes.label}><input type="radio" name="radio" value="2" id="radio2"/>Вишкіл</label>
-                            <label htmlFor="radio3" className={classes.label}><input type="radio" name="radio" value="3" id="radio3"/>Табір</label>
+                            <label htmlFor="radio1" className={classes.label}><input type="radio" name="radio" value="1" id="radio1" />Акція</label>
+                            <label htmlFor="radio2" className={classes.label}><input type="radio" name="radio" value="2" id="radio2" />Вишкіл</label>
+                            <label htmlFor="radio3" className={classes.label}><input type="radio" name="radio" value="3" id="radio3" />Табір</label>
                         </div>
                         <div className={classes.row}>
                             <h2>Категорія</h2>
@@ -121,14 +121,16 @@ const EventCreate = () => {
 
                         <div className={classes.row}>
                             <h2>Питання/побажання до булави</h2>
-                            <TextArea allowClear onChange={onChange1} className={classes.select1}/>
+                            <TextArea allowClear onChange={onChange1} className={classes.select1} />
                         </div>
 
                         <div className={classes.row}>
                             <h2>Які впроваджено зміни/додатки?</h2>
-                            <TextArea allowClear onChange={onChange1} className={classes.select1}/>
+                            <TextArea allowClear onChange={onChange1} className={classes.select1} />
                         </div>
-                        <button type="submit" className={classes.button} ant-click-animating-without-extra-node="false">Створити подію</button>
+                        <Button type="primary" className={classes.button} >
+                            Створити подію
+                        </Button>
                     </form>
                 </div>
             </div>

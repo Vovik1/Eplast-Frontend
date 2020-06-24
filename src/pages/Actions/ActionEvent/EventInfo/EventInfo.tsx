@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Table, Input, Col, Row } from "antd";
+import { Table, Input, Row } from "antd";
 import SortedEventInfo from './SortedEventInfo';
 import rawData from "./data";
 import Gallery from './Gallery';
@@ -52,14 +52,12 @@ const EventInfo = () => {
                 <Gallery />
                 <div>
                     <Row>
-                        <Col span={8} push={16}>
                             <Input.Search
                                 style={{ width: "400px", margin: "0 0 10px 0" }}
                                 placeholder="Search by..."
                                 enterButton
                                 onSearch={search}
-                            />
-                        </Col>
+                            />   
                     </Row>
                     <Table
                         rowKey="uid"
