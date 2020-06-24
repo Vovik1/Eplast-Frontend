@@ -1,5 +1,4 @@
 import React from 'react';
-import 'antd/dist/antd.css';
 import { Select, Input, DatePicker, InputNumber } from 'antd';
 import moment from 'moment';
 

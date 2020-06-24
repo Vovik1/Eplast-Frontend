@@ -1,6 +1,5 @@
 import React from 'react';
 import { useHistory } from "react-router-dom";
-import 'antd/dist/antd.css';
 import { Card} from 'antd';
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
 
